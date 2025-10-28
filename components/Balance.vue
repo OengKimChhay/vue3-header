@@ -2,11 +2,11 @@
 	<Dropdown position="left" content-calss="!pt-[40px] !w-[120px] !-left-1 ">
 		<template #trigger>
 			<div
-				class="bg-white p-1 h-[32px] rounded-full flex items-center justify-between"
+				class="bg-white p-1 h-[32px] w-24 rounded-full flex items-center justify-between"
 			>
 				<div class="flex items-center">
 					<img src="/icons/coin.png" class="w-fit h-5" alt="coin" />
-					<span class="font-semibold mr-10 text-xs ml-1">1000</span>
+					<span class="font-semibold text-xs ml-1">1000</span>
 				</div>
 				<img
 					src="/icons/plus.png"

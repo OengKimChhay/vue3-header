@@ -49,7 +49,7 @@
 
 		<!-- Mobile Menu -->
 		<div class="xl:hidden flex items-center justify-end">
-			<Language />
+			<Account />
 			<button
 				@click="toggleMobileMenu"
 				class="text-white p-2 focus:outline-none"
@@ -93,25 +93,29 @@
 						class="flex items-center justify-between px-4 py-2 border-b border-gray-800"
 					>
 						<div class="text-white font-bold text-lg">MENU</div>
-						<button
-							@click="toggleMobileMenu"
-							class="text-white p-2 focus:outline-none"
-							aria-label="Close menu"
-						>
-							<svg
-								class="w-6 h-6"
-								fill="none"
-								stroke="currentColor"
-								viewBox="0 0 24 24"
+
+						<div class="flex items-center">
+							<Language />
+							<button
+								@click="toggleMobileMenu"
+								class="text-white p-2 focus:outline-none"
+								aria-label="Close menu"
 							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M6 18L18 6M6 6l12 12"
-								/>
-							</svg>
-						</button>
+								<svg
+									class="w-6 h-6"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M6 18L18 6M6 6l12 12"
+									/>
+								</svg>
+							</button>
+						</div>
 					</div>
 
 					<ul>
@@ -182,8 +186,6 @@
 							</NuxtLink>
 						</li>
 					</ul>
-
-					<Account />
 
 					<div class="border-t border-gray-800 py-4">
 						<h3

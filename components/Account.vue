@@ -20,7 +20,7 @@
 			</span>
 		</button>
 		<button>
-			<img src="/icons/calendar.png" class="w-4" alt="calendar" />
+			<img src="/icons/calendar.png" class="max-w-4 max-h-4" alt="calendar" />
 		</button>
 		<Avatar />
 	</div>

@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 /** @type {import('tailwindcss').Config} */
 export default {
 	darkMode: 'class',
@@ -15,6 +17,39 @@ export default {
 				primary: '#e4b764',
 			},
 		},
+		container: {
+			center: true,
+			padding: '15px',
+		},
 	},
-	plugins: [],
+	plugins: [
+		plugin(function (key) {
+			key.addComponents({
+				'.container': {
+					maxWidth: '100%',
+					'@screen sm': {
+						maxWidth: '640px',
+					},
+					'@screen md': {
+						maxWidth: '768px',
+					},
+					'@screen lg': {
+						maxWidth: '1024px',
+						paddingLeft: '1.5rem',
+						paddingRight: '1.5rem',
+					},
+					'@screen xl': {
+						maxWidth: '1280px',
+						paddingLeft: '1.5rem',
+						paddingRight: '1.5rem',
+					},
+					'@screen 2xl': {
+						maxWidth: '1280px',
+						paddingLeft: '1.5rem',
+						paddingRight: '1.5rem',
+					},
+				},
+			});
+		}),
+	],
 };
